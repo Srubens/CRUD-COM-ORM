@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+<div class="container">
+    <h1>Nova Pessoa</h1>
+    <div class="d-flex">
+        <div class="col-12 col-md-12">
+            <form method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome"/>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="nascimento">Nascimento</label>
+                    <input type="text" class="form-control" id="nascimento" name="nascimento" placeholder="Informe a data do seu nascimento"/>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="cargo">Cargo</label>
+                    <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Informe seu cargo"/>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-success" >Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('../partials/footer') %>
